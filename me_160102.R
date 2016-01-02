@@ -4,17 +4,21 @@ medata <- read.csv("me.151111.csv", header=TRUE)
 
 # Mturk Study Fall 2015
 
+# test test Mac2393 making a commit (changes) and then pushing it to Git, because Git bumped into me. 
+# test attempt 2 line 8 mac
+# test again line 9
 
 ####### EXCLUSIONS ######
 # Original N = 117
 
-# exclude attn1: at 111
+# exclude those who failed attn1: at 111
 medata <- medata[ which(medata$attn1 == "emotion") , ]
 
 # Final N = 111
 
-####### Focus #########
-#Promotion = prom
+####### COMPUTING VARIABLES #########
+
+#focus
 medata$rfq_1r <- 6-medata$rfq_1
 medata$rfq_9r <- 6-medata$rfq_9
 medata$rfq_11r <- 6-medata$rfq_11
@@ -31,11 +35,7 @@ medata$prev.matrix <- cbind(medata$rfq_2r, medata$rfq_4r, medata$rfq_5, medata$r
 medata$prev.v <- as.vector(rowMeans(medata$prev.matrix, na.rm=T))
 medata$prev.c <- scale(medata$prev.v, center=T, scale=F)
 
-#alpha(as.data.frame(medata$prom.matrix))
-#alpha(as.data.frame(medata$prev.matrix))
-###### 
-
-###### rmq_ ######
+# mode
 medata$rmq_2r <- 7-medata$rmq_2
 medata$rmq_10r <- 7-medata$rmq_10
 medata$rmq_27r <- 7-medata$rmq_27
@@ -63,7 +63,7 @@ medata$age       <- medata$Age
 medata$eth       <- as.factor(medata$Ethnic)
 medata$edu       <- as.factor(medata$Education)
 
-### read in all the adjectives ####
+### RE-CODING EMOTIONS ####
 
 medata$afraid       <- medata$Afraid_1
 medata$scared       <- medata$Afraid_2
@@ -222,7 +222,7 @@ medata$virtuoussum    <- medata$virtuous + medata$powerful + medata$certain + me
 medata$virtuousave    <- medata$virtuoussum/9
 
 #############
-### Tests ###
+### ANALYSES ###
 #############
 
 attach(medata)
@@ -563,3 +563,4 @@ summary(lm(perceptive~prom.c+prev.c))
 summary(lm(perceptive~prom.c*prev.c))
 summary(lm(perceptive~loc.c+ass.c+prom.c+prev.c))
 
+detach(medata)
