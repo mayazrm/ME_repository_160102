@@ -7,8 +7,9 @@
 medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRUE)
 
 # MC Loading info:
-# MC add your path here
-
+# medata <- read.csv("/Users/markalexanderconley/Desktop/me.151111.csv", header=TRUE)
+# options(digits=3)  
+  
 # Mturk Study Fall 2015
 
 # test test Mac2393 making a commit (changes) and then pushing it to Git, because Git bumped into me. 
