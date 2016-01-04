@@ -1,6 +1,13 @@
-setwd("~/Google Drive/Columbia/RESEARCH/CURRENT/Mode_Emotions/mturk.study.2/ME_repository_160102")
 
-medata <- read.csv("me.151111.csv", header=TRUE)
+# MR Loading info:
+#setwd("~/Google Drive/Columbia/RESEARCH/CURRENT/Mode_Emotions/mturk.study.2/ME_repository_160102")
+#medata <- read.csv("me.151111.csv", header=TRUE)
+
+#KZ Loading info:
+medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRUE)
+
+# MC Loading info:
+# MC add your path here
 
 # Mturk Study Fall 2015
 
@@ -561,3 +568,5 @@ summary(lm(perceptive~prom.c*prev.c))
 summary(lm(perceptive~loc.c+ass.c+prom.c+prev.c))
 
 detach(medata)
+
+
