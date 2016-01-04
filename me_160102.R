@@ -8,7 +8,8 @@ medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRU
 
 # MC Loading info:
 # medata <- read.csv("/Users/markalexanderconley/Desktop/me.151111.csv", header=TRUE)
-# options(digits=3)  
+# options(digits=3)
+# one more line test
   
 # Mturk Study Fall 2015
 
