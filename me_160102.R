@@ -10,6 +10,7 @@ medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRU
 # medata <- read.csv("/Users/markalexanderconley/Desktop/me.151111.csv", header=TRUE)
 # options(digits=3)
 # one more line test
+# and another, already pushed test script from project ME.  Now for the real 160102
   
 # Mturk Study Fall 2015
 
