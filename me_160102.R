@@ -21,6 +21,8 @@ medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRU
 # test attempt 2 line 8 mac
 # test again line 9
 # sorry for all the test lines; i am working on setting up another repo and making sure there is no confustion. 
+# Last one I promise, if this works.  I am GTG on another project, now just reverifiying that this still works.
+
 
 ####### EXCLUSIONS ######
 # Original N = 117
