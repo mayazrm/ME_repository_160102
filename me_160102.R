@@ -20,6 +20,7 @@ medata <- read.csv("/Users/zeekatherine/Mode&Emotions/me.151111.csv", header=TRU
 # test test Mac2393 making a commit (changes) and then pushing it to Git, because Git bumped into me. 
 # test attempt 2 line 8 mac
 # test again line 9
+# sorry for all the test lines; i am working on setting up another repo and making sure there is no confustion. 
 
 ####### EXCLUSIONS ######
 # Original N = 117
